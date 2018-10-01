@@ -457,3 +457,18 @@ SELECT * FROM pilotos;
 SELECT * FROM circuito;
 SELECT * FROM corrida;
 SELECT * FROM resultado;
+
+SELECT r.data_corrida, c.descricao,p.numero_carro as n,  p.nome, r.posicao, r.pontos ,r.tempo FROM resultado r 
+	INNER JOIN corrida c ON r.id_corrida = c.id_corrida AND c.id_corrida = 8
+	INNER JOIN pilotos p ON p.id_piloto = r.id_piloto;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
